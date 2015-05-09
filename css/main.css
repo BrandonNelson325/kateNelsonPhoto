@@ -1,0 +1,892 @@
+/* 
+    Document   : screen
+    Created on : Oct 17, 2012, 10:47:57 AM
+    Author     : brandonnelson
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*@import url("http://fonts.googleapis.com/css?family=Doppio+One");*/
+
+/* Table of Content
+==================================================
+        #Reset & Basics
+        #Basic Styles
+        #Site Styles
+        #Typography
+        #navigation
+        #Links
+        #Lists
+        #Images
+        #Buttons
+        #Forms
+        #Misc */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+//article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, second-nav {
+//display: block; }
+body {
+    line-height: 2; }
+ol, ul {
+    list-style: none; }
+blockquote, q {
+    quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+/*reset box model*/
+*{
+    box-sizing: border-box;
+}
+
+/* #Basic styles
+================================================== */
+
+/*body {
+    background-image: url(/photos/crump.jpg);
+}*/
+
+#larr {
+    display: none;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 1%;
+}
+h2{
+    font-size: 25px;
+    margin: 1%;
+}
+h3{
+    font-size: 20px;
+    margin: 1%;
+}
+textarea {
+    width:100%;
+    height:200px;
+}
+main {
+    margin:0 10% 0 10%;
+}
+main li a{
+    font-size:18px;
+    color: black;
+    font-style: italic;
+}
+main a{
+    font-size: 20px;
+    color: lightgray;
+}
+main p {
+    font-size: 18px;
+    margin-top: 3%;
+}
+#contact li{
+    font-size: 20px;
+}
+#contact li a{
+    font-size: 20px;
+}
+#contact li a img {
+    margin-left: 3%;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 2%
+}
+footer {
+    width: 100%;
+    height:100px;
+    margin:1%;
+    position:relative;
+    float:left;
+}
+footer ul li {
+    display: inline;
+}
+footer li a {
+    width: 15%;
+    margin: 1%;
+    display:inline;
+}
+footer ul {
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+#logo {
+    display: block;
+    margin: 5% 25% 10% 10%;
+    width: 40%;
+    height: 50%;
+    float: right;
+}
+
+#logo-home {
+    width: 10%;
+    float: left;
+    margin: 1%;
+}
+#home-image {
+    width:40%;
+    float: left;
+    margin: 3% 3% 8% 3%;
+}
+#contact-image {
+    width:50%;
+    float: left;
+}
+
+a {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EFFF6C; 
+}
+
+a:visited {
+    text-decoration: none;
+}
+#gallerythumb {
+    width: 75%;
+    margin: 2% 12.5% 2% 12.5%;
+}
+#gallerythumb a{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 4%;
+    padding: 1%;
+}
+#gallerythumb ul li a span {
+    display:block;
+    color: #d3d3d3;
+    font-style: normal;
+}
+#gallerythumb ul li a:hover {
+    color:#EFFF6C;
+}
+
+/* #Nav
+================================================== */
+
+.dropdown {
+    visibility: hidden;
+}
+.indexnav:hover {
+    margin-left: 15px;
+    -webkit-transition: .25s all ease-in-out; 
+    -moz-transition: .25s all ease-in-out; 
+    -o-transition: .25s all ease-in-out; 
+}
+
+#index-nav {
+    width: 10%;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding-top: 20%;
+    margin-right: 0;
+}
+
+#index-nav li a {
+    font-size: 36px;
+    color: #d3d3d3;
+    font-style: normal;
+}
+#index-nav li a:hover {
+    color: #EFFF6C;
+}
+
+#home-nav li a{
+    width: 15%;
+    font-size: 36px;
+    float: left;
+    display: inline;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5.5%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#login-link {
+    position: absolute;
+    top:0;
+    right: 1%;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#login-link a:hover {
+    color: #ff995c;  
+}
+
+#login-link a:visited {
+    text-decoration: none;
+}
+#gallerynav{
+    display:block;
+    width: 10%;
+    float: left;
+    text-align: center;
+    margin: 4% 0 0 0;
+}
+#gallerynav li a{
+    color:#d3d3d3;
+    font-style: normal;
+}
+#gallerynav li a:hover{
+    color: #EFFF6C;
+}
+
+/* forms
+================================================== */
+.regspan{
+    font-size: 36px;
+    margin-left: 0;
+    width: 30%;
+}
+#registration {
+    width: 50%;
+    border-right: solid black;
+    float:left;
+}
+#people {
+    width: 50%;
+    margin: 0 auto;
+}
+#credentials {
+    width: 45%;
+}
+.login {
+    width: 25%;
+    float: right;
+    margin: 0 auto;
+}
+#contact {
+    width: 30%;
+    float:left;
+    margin-left: 10%;
+}
+#first {
+    margin-left: 7%;
+}
+#last {
+    margin-left: 7%;
+}
+#subject {
+    margin-left: 14%;
+}
+#edit {
+    width: 50%;
+    border: 1px solid black;
+}
+#edituser {
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+}
+#editcredentials {
+    width: 50%;
+    padding-left: 5%;
+}
+#update {
+    margin-left: 5%;
+}
+#editcontent {
+    border: 1px solid black;
+    padding: 2%;
+    width: 50%;
+}
+.border {
+    border: 1px solid black;
+    margin: 2px;
+    padding: 1%;
+}
+#gallerycontent label{
+    padding: 2%;
+}
+#gallerycontent {
+    border: 1px solid black;
+    margin: 2px;
+    padding: 1%;
+    width: 60%;
+}
+.larr {
+    color: black;
+}
+.alert {
+    color: red;
+    margin: 1% 5% 1% 5%;
+    font-size: 14px;
+}
+.h12 {
+    text-align: left;
+}
+ol li {
+    margin-left: 8%;
+}
+
+/* slideshow
+================================================== */
+
+#gallery {
+    width: 750px; 
+    margin: 0 auto 20px auto;
+}
+#gallery ul {
+    padding-left: 10px;
+    display: inline;
+}
+#gallery li {
+    display: inline; 
+    margin-right: 3px;
+}
+#gallery li img{
+    cursor: pointer;
+}
+#main-img {
+    background: url(bg_img.png) no-repeat 0 0; 
+    width: 750px;
+    height: 500px;
+}
+.thumb {
+    width: 115px;
+    height: 85px;
+}
+.thumb2 {
+    width: 200px;
+    height: 150px;
+}
+
+/* #Style guide/siteplan
+================================================== */
+#briannasite {
+    width: 50%;
+}
+.swatch { 
+    height: 72px;
+    width: 72px;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+#siteimg {
+    width: 25%;
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+    #larr {
+    display: inline;
+    color: black;
+}
+    
+    #home-nav li a{
+        width: 15%;
+        font-size: 18px;
+        float: left;
+        display: inline;
+        margin-left: 35%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: -15%;
+        text-align: center;
+    }
+    #home-nav li {
+        display: table-row;
+    }
+
+    #dropdown {
+        width: 100%
+    }
+    #gallerythumb a {
+        display:block;
+        width:100%;
+        margin: 0;
+    }
+
+    #gallery {
+        width: 100%; 
+        margin: 0 auto 1% auto;
+        display: block;
+    }
+    #gallery ul {
+        padding-left: 1%;
+        display: inline;
+    }
+    #gallery li {
+        display: inline; 
+        margin:0;
+    }
+    #gallery li img{
+        cursor: pointer;
+    }
+    #main-img {
+        background: url(bg_img.png) no-repeat 0 0; 
+        width: 100%;
+        height: 60%;
+    }
+    .thumb {
+        width: 15%;
+        height: 12%;
+    }
+    .thumb2 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* index nav
+================================================== */
+
+    #index-nav {
+        width: 80%;
+        margin:0 auto 0 auto;
+    }
+
+    #index-nav li a {
+        font-size: 30px;
+        text-align: center;
+    }
+    #logo {
+        margin: 2% auto 0 auto;
+        width: 50%;
+        height: auto;
+        float: none;
+    }
+
+    #logo-home {
+        width: 20%;
+        float: left;
+        margin: 1%;
+    }
+    a#login-link {
+        font-size: 12px;
+    }
+    /* gallery nav
+================================================== */
+    #gallerynav {
+        display: none;
+        margin: 0;
+
+    }
+    #gallerynav li a {
+        font-size: 16px;
+    }
+
+    /* images
+================================================== */
+
+    #contact-image {
+        width: 100%;
+    }
+    #home-image {
+        width: 100%;
+    }
+
+    /* login
+================================================== */
+    #registration {
+        width: 58%; 
+        margin-left: -10%;
+    }
+    .login {
+        width: 47%;
+    }
+    .regspan {
+        font-size: 22px;
+    }
+
+}
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) 
+
+and (orientation: landscape) {
+    #larr {
+        display: none;
+    }
+    #home-nav li a{
+        width: 15%;
+        font-size: 20px;
+        float: left;
+        display: inline;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 11.5%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #login-link a{
+        font-size: 15px;
+    }
+    #gallerythumb a {
+        display:block;
+        width:75%;
+        margin: 0 12.5% 0 12.5%;
+    }
+
+    #gallery {
+        width: 80%; 
+        margin: 0 auto 1% auto;
+        display: block;
+        float: right;
+    }
+    #gallery ul {
+        padding-left: 5%;
+        display: inline;
+        margin-left: 4%;
+    }
+    #gallery li {
+        display: inline; 
+        margin:0;
+
+    }
+    #gallery li img{
+        cursor: pointer;
+    }
+    #main-img {
+        background: url(bg_img.png) no-repeat 0 0; 
+        width: 80%;
+        height: 60%;
+        margin-left: 8%;
+    }
+    .thumb {
+        width: 13%;
+        height: 12%;
+    }
+    .thumb2 {
+        width: 200px;
+        height: 150px;
+    }
+    #gallerynav li a{
+        display: block;
+        font-size: 13px;
+
+    }
+    /* index nav
+ ================================================== */
+
+    #logo {
+        display: block;
+        margin: 5% 15% 10% 10%;
+        width: 50%;
+        height: 50%;
+        float: right;
+    }
+    .indexnav:hover {
+        margin-left: 15px;
+        -webkit-transition: .25s all ease-in-out; 
+        -moz-transition: .25s all ease-in-out; 
+        -o-transition: .25s all ease-in-out; 
+    }
+
+    #index-nav {
+        width: 10%;
+        margin-left: 8%;
+        margin-right: 5%;
+        padding-top: 20%;
+        margin-right: 0;
+    }
+
+    #index-nav li a {
+        font-size: 18px;
+        color: #d3d3d3;
+        font-style: normal;
+    }
+
+    /* dropdown nav
+================================================== */
+    .dropdown {
+        visibility: visible;
+        width: 50%;
+        height: 125px;
+        font-size: 20px;
+        display: block;
+        position:absolute;
+        margin: 0 15% 0 35%;
+    }
+    .dropdown li {
+        height: 25px;
+    }
+    #logo-home {
+        width: 20%;
+        float: left;
+        margin: 1%;
+    }
+    a#login-link {
+        font-size: 12px;
+    }
+    /* gallery nav
+================================================== */
+    #gallerynav {
+        display: block;
+        margin:0;
+    }
+
+    /* images
+================================================== */
+
+    #contact-image {
+        width: 100%;
+    }
+    #home-image {
+        width: 100%;
+    }
+    /* login
+================================================== */
+    #registration {
+        width: 60%; 
+        margin-left: -10%;
+    }
+    .login {
+        width: 35%;
+    }
+    .regspan {
+        font-size: 25px;
+    }
+}
+
+
+
+/* Laptop/Tablet (1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) 
+
+and (orientation: landscape) {
+    /* index nav
+================================================== */
+
+    #larr {
+        display: none;
+    }#home-nav li a{
+        width: 15%;
+        font-size: 25px;
+        float: left;
+        display: inline;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 11.5%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #index-nav {
+        width: 80%;
+        margin:0 auto 0 auto;
+    }
+
+    #index-nav li a {
+        font-size: 30px;
+        text-align: center;
+    }
+    #logo {
+        margin: 2% auto 0 auto;
+        width: 50%;
+        height: auto;
+        float: none;
+    }
+    #logo-home {
+        width: 18%;
+    }
+
+    /* images
+================================================== */
+
+    #contact-image {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #home-image {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen
+and (min-width: 769px)
+and (max-width: 800px)
+and (max-height: 600px)
+{
+    #larr {
+        display: none;
+    }
+    #main-img {
+        width:75%;
+        height: 60%;
+        float:right;
+        margin-right: 10%;
+    }
+    .thumb {
+        width: 12%;
+        height: 12%;
+    }
+    #gallery ul {
+        display: inline;
+        margin-left: 6%;
+    }
+    #gallery li {
+        margin: 0;
+    }
+}
+/*tablet portrait*/
+
+/* Tablet Portrait (768px) */
+@media only screen and (min-width: 321px) and (max-width: 1024px) 
+
+and (orientation: portrait) {
+    #larr {
+        display: none;
+    }
+    #home-nav li a{
+        width: 15%;
+        font-size: 28px;
+        float: left;
+        display: inline;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 11.5%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #contact-image {
+        width: 100%;
+    }
+    #home-image {
+        width: 100%;
+    }
+
+
+    #dropdown {
+        width: 100%
+    }
+    #gallerythumb a {
+        display:block;
+        width:100%;
+        margin: 0;
+    }
+
+    #gallery {
+        width: 90%; 
+        margin: 0 auto 1% auto;
+        display:block;
+    }
+    #gallery ul {
+        padding-left: 15%;
+        display: inline;
+    }
+    #gallery li {
+        display: inline; 
+        margin:0;
+    }
+    #gallery li img{
+        cursor: pointer;
+    }
+    #main-img {
+        background: url(bg_img.png) no-repeat 0 0; 
+        width: 80%;
+        height: 60%;
+        float: right;
+    }
+    .thumb {
+        width: 13%;
+        height: 12%;
+    }
+    .thumb2 {
+        width: 100%;
+        height: 100%;
+    }
+    #gallerynav li a{
+        display: block;
+
+    }
+
+
+    /* index nav
+================================================== */
+
+    #index-nav {
+        width: 80%;
+        margin:0 auto 0 auto;
+    }
+
+    #index-nav li a {
+        font-size: 30px;
+        text-align: center;
+    }
+    #logo {
+        margin: 2% auto 0 auto;
+        width: 50%;
+        height: auto;
+        float: none;
+    }
+    /* dropdown nav
+================================================== */
+    .dropdown {
+        visibility: visible;
+        width: 50%;
+        height: 125px;
+        font-size: 20px;
+        display: block;
+        position:absolute;
+        margin: 0 15% 0 35%;
+    }
+    .dropdown li {
+        height: 25px;
+    }
+    #logo-home {
+        width: 20%;
+        float: left;
+        margin: 1%;
+    }
+    a#login-link {
+        font-size: 12px;
+    }
+    /* gallery nav
+================================================== */
+    #gallerynav {
+        display: block;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    /*  */
+    #larr {
+        display: none;
+    } 
+    #main-img {
+        width: 75%;
+        height: 60%;
+        float:right;
+    }
+    .thumb {
+        width: 12%;
+        height: 12%;
+    }
+    #gallery ul {
+        display: inline;
+        margin-left: 6%;
+    }
+    #gallery li {
+        margin: 0;
+    }
+}
+
